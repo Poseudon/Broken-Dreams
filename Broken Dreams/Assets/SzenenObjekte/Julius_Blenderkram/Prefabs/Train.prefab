@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8968344129701721019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8592346734232135937}
+  - component: {fileID: 4652779449050982052}
+  - component: {fileID: 7454874688363893358}
+  - component: {fileID: 9218890455987423770}
+  - component: {fileID: 3469287838113100313}
+  - component: {fileID: 674831398}
+  m_Layer: 0
+  m_Name: Train
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8592346734232135937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968344129701721019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.922176, y: -0.08274481, z: -11.738136}
+  m_LocalScale: {x: 1, y: 0.9, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4652779449050982052
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968344129701721019}
+  m_Mesh: {fileID: 8552134717624371188, guid: a48429f354ced994382794e5ab535720, type: 3}
+--- !u!23 &7454874688363893358
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968344129701721019}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9ee5267fde3b9a14a9b25ec1e73da137, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9218890455987423770
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968344129701721019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8552134717624371188, guid: a48429f354ced994382794e5ab535720, type: 3}
+--- !u!114 &3469287838113100313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968344129701721019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac75b07e79d96504592803a38cd2cbee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &674831398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8968344129701721019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: TrainPath
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 19.48893, y: 0.295, z: -9.819447}
+  - {x: 14.408381, y: 0.295, z: -9.605851}
+  - {x: 8.361673, y: 0.295, z: -9.576973}
+  - {x: 5.2029595, y: 0.295, z: -8.03657}
+  - {x: 3.8001359, y: 0.295, z: -5.3120914}
+  - {x: 3.766523, y: 0.295, z: 0.39103615}
+  - {x: 5.479528, y: 0.295, z: 3.6814544}
+  - {x: 9.117601, y: 0.295, z: 5.0418997}
+  - {x: 12.738929, y: 0.295, z: 3.4864833}
+  - {x: 14.328278, y: 0.295, z: -1.4842949}
+  - {x: 14.18747, y: 1.879084, z: -5.981514}
+  - {x: 14.241814, y: 3.278, z: -10.150912}
+  - {x: 14.166799, y: 3.278, z: -12.125972}
+  - {x: 14.26136, y: 3.278, z: -15.947794}
+  - {x: 17.12842, y: 3.278, z: -20.566687}
+  - {x: 21.202679, y: 3.278, z: -20.979517}
+  - {x: 25.213089, y: 1.879084, z: -20.901459}
+  - {x: 28.911377, y: 0.295, z: -20.888016}
+  - {x: 33.96775, y: 0.295, z: -20.105534}
+  - {x: 36.195057, y: 0.295, z: -14.514664}
+  - {x: 32.78862, y: 0.295, z: -10.517717}
+  - {x: 28.923206, y: 0.295, z: -9.8721485}
+  - {x: 25.45424, y: 0.295, z: -9.8172035}
+  - {x: 19.48893, y: 0.295, z: -9.819447}
+  nodeCount: 24
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
