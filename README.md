@@ -1,5 +1,5 @@
 # Broken-Dreams
-This Game was created in the course of Brackeys Game Jam 2022.1.
+This Game was created in the course of Brackeys Game Jam 2022.1 (20.02.2022 - 27.02.2022).
 We worked on this in a Team of five:
 - Rohe Steffen
 - Maier Jonas
