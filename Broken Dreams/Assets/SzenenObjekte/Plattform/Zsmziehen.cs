@@ -14,7 +14,6 @@ public class Zsmziehen : MonoBehaviour
     private List<Vector3> Startanker = new List<Vector3>();
     private List<Quaternion> Startrot = new List<Quaternion>();
     public List<VisualEffect> visualEffect = new List<VisualEffect>();
-    private float lifetime = 5;
     public OrbitCamera Camera;
     public GameObject Zuglol;
 

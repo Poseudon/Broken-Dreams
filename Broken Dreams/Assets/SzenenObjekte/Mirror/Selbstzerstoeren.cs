@@ -5,7 +5,6 @@ using UnityEngine;
 public class Selbstzerstoeren : MonoBehaviour
 {
     public float SecondsBeforeFadeOut = 10.0f; 
-    private bool destroy = false;
     private Material material;
     private MeshRenderer meshRenderer;
     private float dissolveState = 0.0f;

@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class DeathBorder : MonoBehaviour
 {
-    public ScreenFade fade;
+    private ScreenFade fade;
+    // more respawn points were planned but time ran out
     public List<Transform> RespawnPoints = new List<Transform>();
     public GameObject player;
     public GameObject bear;
-    private int counter = 0;
 
+
+    private void Start()
+    {
+        fade = FindObjectOfType<ScreenFade>();    
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,18 +30,13 @@ public class DeathBorder : MonoBehaviour
         }
     }
 
-    public void nextStage()
-    {
-        counter++;
-    }
-
-    IEnumerator playerSpawn()
+    private IEnumerator playerSpawn()
     {
         yield return new WaitForSeconds(2f);
         player.gameObject.transform.position = RespawnPoints[0].position;
         fade.live();
     }
-    IEnumerator bearSpawn()
+    private IEnumerator bearSpawn()
     {
         yield return new WaitForSeconds(2f);
         bear.gameObject.transform.position = RespawnPoints[0].position;

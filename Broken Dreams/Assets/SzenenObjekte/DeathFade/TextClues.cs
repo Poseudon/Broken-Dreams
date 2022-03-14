@@ -8,23 +8,14 @@ public class TextClues : MonoBehaviour
 {
     public TMP_Text clue;
 
-    private void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public IEnumerator TextClue(string Hinweis)
     {
+        // sets text, fades it in, waits, fades out
         clue.text = Hinweis;
         yield return StartCoroutine(FadeInText(1f, clue));
         yield return new WaitForSeconds(4f);
         yield return StartCoroutine(FadeOutText(1f, clue));
+        // set text back to be safe
         clue.text = "";
     }
 

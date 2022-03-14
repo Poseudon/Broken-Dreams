@@ -8,10 +8,8 @@ public class CannonController : MonoBehaviour
     public float BlastPower = 5;
     public bool canShoot = false;
 
-
     public GameObject Cannonball;
     public Transform ShotPoint;
-
     private TextClues clues;
 
     private void Start()
@@ -26,10 +24,7 @@ public class CannonController : MonoBehaviour
         float VericalRotation = -Input.GetAxis("Vertical");
 
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles +
-            new Vector3(VericalRotation * rotationSpeed, HorizontalRotation * rotationSpeed, 0));
-
-
-
+        new Vector3(VericalRotation * rotationSpeed, HorizontalRotation * rotationSpeed, 0));
 
         if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
@@ -38,13 +33,6 @@ public class CannonController : MonoBehaviour
             GameObject CreatedCannonball = Instantiate(Cannonball, ShotPoint.position, ShotPoint.rotation);
             CreatedCannonball.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
             CreatedCannonball.GetComponent<Rigidbody>().velocity = ShotPoint.transform.up * BlastPower;
-
-            // Added explosion for added effect
-            //Destroy(Instantiate(Explosion, ShotPoint.position, ShotPoint.rotation), 2);
-
-            // Shake the screen for added effect
-            //Screenshake.ShakeAmount = 5;
-
         }
         else if (Input.GetKeyDown(KeyCode.Space) && !canShoot)
         {

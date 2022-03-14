@@ -62,13 +62,12 @@ public class Cannon : MonoBehaviour
                     {
                         Controller.canShoot = true;
                         pickup.Interact();
-                        //funktioniert aus nícht ersichtlichen Gründen nicht, Object Reference not set to an instance of an Object????????????????????????
-                        StartCoroutine(clues.TextClue("Kanone geladen"));
+                        StartCoroutine(clues.TextClue("Cannon loaded"));
                     }
                 }
                 else
                 {
-                    StartCoroutine(clues.TextClue("Damit kann ich die Kanone nicht laden"));
+                    StartCoroutine(clues.TextClue("I dont think this will fit"));
                 }
             }
         }
